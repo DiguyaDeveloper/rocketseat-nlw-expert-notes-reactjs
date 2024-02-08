@@ -2,6 +2,7 @@ import { ChangeEvent, useState } from "react";
 import logo from "./assets/logo-nlw-expert.svg";
 import { NewNoteCard } from "./components/new-note-card/new-note-card";
 import { NoteCard } from "./components/note-card/note-card";
+import { toast } from "sonner";
 
 interface Note {
   id: string;
@@ -42,6 +43,16 @@ export function App() {
     localStorage.setItem("notes", JSON.stringify(notesArray));
   }
 
+  function onNoteDeleted(id: string) {
+    const notesArray = notes.filter((note) => note.id !== id);
+
+    setNotes(notesArray);
+
+    localStorage.setItem("notes", JSON.stringify(notesArray));
+
+    toast.success("Nota removida!");
+  }
+
   const filteredNotes =
     search !== ""
       ? notes.filter((note) =>
@@ -50,7 +61,7 @@ export function App() {
       : notes;
 
   return (
-    <div className="mx-auto max-w-6xl my-12 space-y-6 px-5 md:px-0">
+    <div className="mx-auto max-w-6xl my-12 space-y-6 px-5">
       <img src={logo} alt="Nlw Expert" />
 
       <form className="w-full">
@@ -69,7 +80,7 @@ export function App() {
 
         {filteredNotes.map((note) => {
           return (
-            <NoteCard key={note.id} note={note} onNoteDeleted={() => {}} />
+            <NoteCard key={note.id} note={note} onNoteDeleted={onNoteDeleted} />
           );
         })}
       </div>
