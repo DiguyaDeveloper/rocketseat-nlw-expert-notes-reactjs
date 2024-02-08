@@ -50,7 +50,7 @@ export function App() {
       : notes;
 
   return (
-    <div className="mx-auto max-w-6xl my-12 space-y-6">
+    <div className="mx-auto max-w-6xl my-12 space-y-6 px-5 md:px-0">
       <img src={logo} alt="Nlw Expert" />
 
       <form className="w-full">
@@ -58,6 +58,7 @@ export function App() {
           type="text"
           placeholder="Busque em suas notas..."
           className="w-full bg-transparent text-3xl font-semibold tracking-tight outline-none placeholder:text-slate-500"
+          onChange={handleSearch}
         />
       </form>
 
