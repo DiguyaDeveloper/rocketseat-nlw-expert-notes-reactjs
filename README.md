@@ -26,6 +26,38 @@ O Rocketnotes é mais do que apenas um projeto. É uma representação do nosso 
 
 ---
 
+## Como Utilizar
+
+Siga estas instruções para começar a usar o Rocketnotes em sua máquina local:
+
+1. Clone este repositório em sua máquina local:
+
+```bash
+git clone https://github.com/DiguyaDeveloper/rocketseat-nlw-expert-notes-reactjs.git
+```
+
+2. Navegue até o diretório do projeto
+
+```bash
+cd rocketseat-nlw-expert-notes-reactjs
+```
+
+3. Instale as dependências
+
+```bash
+npm install
+# ou
+yarn install
+```
+
+4. Execute o projeto
+
+```bash
+npm run dev
+```
+
+---
+
 ## Licença
 
 Este projeto é licenciado sob a [MIT License](LICENSE), o que significa que você pode usá-lo livremente em seus próprios projetos!
