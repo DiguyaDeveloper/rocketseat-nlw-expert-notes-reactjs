@@ -8,6 +8,12 @@ Bem-vindo ao Rocketnotes, uma plataforma para fazer anotações de forma ágil e
 
 Durante o curso na Rocketseat, exploramos o desenvolvimento de aplicações web utilizando tecnologias de ponta, incluindo React com TypeScript e ferramentas modernas como Vite, Radix e Tailwind CSS. Além disso, realizamos uma integração com um recurso avançado do navegador, a API de Reconhecimento de Fala, para oferecer uma experiência única aos usuários.
 
+- **Aula 1**: Montagem do projeto React com a tela de listagem de notas.
+- **Aula 2**: Adicionado Radix para componente de Dialog e configuração dos formulários.
+- **Aula 3**: Finalização das integrações dos formulários com LocalStorage do Browser, instalação e integração com API de reconhecimento de fala.
+
+Durante cada aula, enfrentamos desafios únicos e expandimos nossos conhecimentos em React, TypeScript, Vite, Tailwind CSS e muito mais!
+
 ---
 
 ## O Projeto Rocketnotes
